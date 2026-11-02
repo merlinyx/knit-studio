@@ -1,0 +1,6 @@
+{
+  "gauge": 2,
+  "carrier": 6,
+  "section_carriers": {"elastic base": 1, "wire body": 6},
+  "finish": "bind_off"
+}

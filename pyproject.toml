@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "knit-studio"
+dynamic = ["version"]
+description = "Turn pattern images into knitting-machine files for spacer fabric and wire-knit tubes."
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["Pillow>=10"]
+
+[project.urls]
+Homepage = "https://github.com/merlinyx/knit-studio"
+
+[project.optional-dependencies]
+# Opens Knit Studio in its own window instead of a browser tab.
+desktop = ["pywebview>=6"]
+build = ["pywebview>=6", "pyinstaller>=6.10"]
+
+[project.scripts]
+spacer-plan = "spacer_pipeline.cli:main"
+knit-studio = "spacer_pipeline.studio.app:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "spacer_pipeline.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"spacer_pipeline.studio" = ["presets.json", "samples/*.png", "static/*", "static/vendor/*"]
+

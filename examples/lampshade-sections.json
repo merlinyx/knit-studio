@@ -1,0 +1,40 @@
+{
+  "sections": [
+    {
+      "name": "elastic base",
+      "start_course": 1,
+      "end_course": 8,
+      "color": "#e8b86d"
+    },
+    {
+      "name": "wire body",
+      "start_course": 9,
+      "end_course": 24,
+      "color": "#87b6c8"
+    }
+  ],
+  "holes": [
+    {
+      "start_course": 3,
+      "gaps": [
+        [
+          9,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "bed": "f"
+    }
+  ]
+}

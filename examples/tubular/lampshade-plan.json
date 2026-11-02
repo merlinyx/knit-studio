@@ -1,0 +1,483 @@
+{
+  "format": "tubular-design-plan-v3",
+  "source": "/Users/ymei/Desktop/spacers/spacer-image-pipeline/examples/tubular/lampshade-profile.png",
+  "input_mode": "dimensions",
+  "coordinates": "one-based courses and bed-local needles; mirrored back chart",
+  "bed_width": 25,
+  "diameter_inches": 4,
+  "height_inches": 3,
+  "stitch_gauge": 4,
+  "course_gauge": 8,
+  "courses": [
+    {
+      "course": 1,
+      "stitches": 50,
+      "front_stitches": 25,
+      "diameter_inches": 4.0,
+      "section": "elastic base",
+      "color": "#e8b86d",
+      "bed_runs": {
+        "f": [
+          1,
+          25
+        ],
+        "b": [
+          1,
+          25
+        ]
+      }
+    },
+    {
+      "course": 2,
+      "stitches": 50,
+      "front_stitches": 25,
+      "diameter_inches": 4.0,
+      "section": "elastic base",
+      "color": "#e8b86d",
+      "bed_runs": {
+        "f": [
+          1,
+          25
+        ],
+        "b": [
+          1,
+          25
+        ]
+      }
+    },
+    {
+      "course": 3,
+      "stitches": 50,
+      "front_stitches": 25,
+      "diameter_inches": 4.0,
+      "section": "elastic base",
+      "color": "#e8b86d",
+      "bed_runs": {
+        "f": [
+          1,
+          25
+        ],
+        "b": [
+          1,
+          25
+        ]
+      }
+    },
+    {
+      "course": 4,
+      "stitches": 50,
+      "front_stitches": 25,
+      "diameter_inches": 4.0,
+      "section": "elastic base",
+      "color": "#e8b86d",
+      "bed_runs": {
+        "f": [
+          1,
+          25
+        ],
+        "b": [
+          1,
+          25
+        ]
+      }
+    },
+    {
+      "course": 5,
+      "stitches": 50,
+      "front_stitches": 25,
+      "diameter_inches": 4.0,
+      "section": "elastic base",
+      "color": "#e8b86d",
+      "bed_runs": {
+        "f": [
+          1,
+          25
+        ],
+        "b": [
+          1,
+          25
+        ]
+      }
+    },
+    {
+      "course": 6,
+      "stitches": 50,
+      "front_stitches": 25,
+      "diameter_inches": 4.0,
+      "section": "elastic base",
+      "color": "#e8b86d",
+      "bed_runs": {
+        "f": [
+          1,
+          25
+        ],
+        "b": [
+          1,
+          25
+        ]
+      }
+    },
+    {
+      "course": 7,
+      "stitches": 50,
+      "front_stitches": 25,
+      "diameter_inches": 4.0,
+      "section": "elastic base",
+      "color": "#e8b86d",
+      "bed_runs": {
+        "f": [
+          1,
+          25
+        ],
+        "b": [
+          1,
+          25
+        ]
+      }
+    },
+    {
+      "course": 8,
+      "stitches": 50,
+      "front_stitches": 25,
+      "diameter_inches": 4.0,
+      "section": "elastic base",
+      "color": "#e8b86d",
+      "bed_runs": {
+        "f": [
+          1,
+          25
+        ],
+        "b": [
+          1,
+          25
+        ]
+      }
+    },
+    {
+      "course": 9,
+      "stitches": 50,
+      "front_stitches": 25,
+      "diameter_inches": 4.0,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          1,
+          25
+        ],
+        "b": [
+          1,
+          25
+        ]
+      }
+    },
+    {
+      "course": 10,
+      "stitches": 48,
+      "front_stitches": 24,
+      "diameter_inches": 3.8552036199095023,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          1,
+          24
+        ],
+        "b": [
+          1,
+          24
+        ]
+      }
+    },
+    {
+      "course": 11,
+      "stitches": 46,
+      "front_stitches": 23,
+      "diameter_inches": 3.7104072398190047,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          2,
+          24
+        ],
+        "b": [
+          2,
+          24
+        ]
+      }
+    },
+    {
+      "course": 12,
+      "stitches": 44,
+      "front_stitches": 22,
+      "diameter_inches": 3.5294117647058822,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          2,
+          23
+        ],
+        "b": [
+          2,
+          23
+        ]
+      }
+    },
+    {
+      "course": 13,
+      "stitches": 42,
+      "front_stitches": 21,
+      "diameter_inches": 3.3484162895927603,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          3,
+          23
+        ],
+        "b": [
+          3,
+          23
+        ]
+      }
+    },
+    {
+      "course": 14,
+      "stitches": 40,
+      "front_stitches": 20,
+      "diameter_inches": 3.2036199095022626,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          3,
+          22
+        ],
+        "b": [
+          3,
+          22
+        ]
+      }
+    },
+    {
+      "course": 15,
+      "stitches": 38,
+      "front_stitches": 19,
+      "diameter_inches": 3.02262443438914,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          4,
+          22
+        ],
+        "b": [
+          4,
+          22
+        ]
+      }
+    },
+    {
+      "course": 16,
+      "stitches": 36,
+      "front_stitches": 18,
+      "diameter_inches": 2.8778280542986425,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          4,
+          21
+        ],
+        "b": [
+          4,
+          21
+        ]
+      }
+    },
+    {
+      "course": 17,
+      "stitches": 34,
+      "front_stitches": 17,
+      "diameter_inches": 2.6968325791855206,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          5,
+          21
+        ],
+        "b": [
+          5,
+          21
+        ]
+      }
+    },
+    {
+      "course": 18,
+      "stitches": 32,
+      "front_stitches": 16,
+      "diameter_inches": 2.515837104072398,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          5,
+          20
+        ],
+        "b": [
+          5,
+          20
+        ]
+      }
+    },
+    {
+      "course": 19,
+      "stitches": 30,
+      "front_stitches": 15,
+      "diameter_inches": 2.3710407239819005,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          6,
+          20
+        ],
+        "b": [
+          6,
+          20
+        ]
+      }
+    },
+    {
+      "course": 20,
+      "stitches": 28,
+      "front_stitches": 14,
+      "diameter_inches": 2.1900452488687785,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          6,
+          19
+        ],
+        "b": [
+          6,
+          19
+        ]
+      }
+    },
+    {
+      "course": 21,
+      "stitches": 26,
+      "front_stitches": 13,
+      "diameter_inches": 2.0452488687782804,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          7,
+          19
+        ],
+        "b": [
+          7,
+          19
+        ]
+      }
+    },
+    {
+      "course": 22,
+      "stitches": 24,
+      "front_stitches": 12,
+      "diameter_inches": 1.8642533936651584,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          7,
+          18
+        ],
+        "b": [
+          7,
+          18
+        ]
+      }
+    },
+    {
+      "course": 23,
+      "stitches": 22,
+      "front_stitches": 11,
+      "diameter_inches": 1.6832579185520362,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          8,
+          18
+        ],
+        "b": [
+          8,
+          18
+        ]
+      }
+    },
+    {
+      "course": 24,
+      "stitches": 20,
+      "front_stitches": 10,
+      "diameter_inches": 1.5384615384615385,
+      "section": "wire body",
+      "color": "#87b6c8",
+      "bed_runs": {
+        "f": [
+          8,
+          17
+        ],
+        "b": [
+          8,
+          17
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "elastic base",
+      "start_course": 1,
+      "end_course": 8,
+      "color": "#e8b86d"
+    },
+    {
+      "name": "wire body",
+      "start_course": 9,
+      "end_course": 24,
+      "color": "#87b6c8"
+    }
+  ],
+  "holes": [
+    {
+      "start_course": 3,
+      "bed": "f",
+      "gaps": [
+        [
+          9,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          10
+        ]
+      ]
+    }
+  ]
+}

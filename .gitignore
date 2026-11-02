@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+dist/
+build/
+*.egg-info/
+.venv/
+generated/
+.DS_Store
+drawings/
+# Outputs written by the example scripts and the app
+*.k
+*.dat
+examples/**/*-schedule.json

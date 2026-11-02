@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knit Studio</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Knit Studio</div>
+    <div class="segmented" role="tablist" aria-label="Pipeline">
+      <button role="tab" data-pipeline="spacer">Spacer panel</button>
+      <button role="tab" data-pipeline="tube">Tube</button>
+    </div>
+    <label class="name-field">Design name
+      <input id="design-name" type="text" spellcheck="false">
+    </label>
+    <div class="spacer-flex"></div>
+    <label class="preset-field">Preset
+      <select id="preset-select"></select>
+    </label>
+    <button id="save-preset" class="ghost">Save as preset…</button>
+    <button id="open-recipe" class="ghost">Open settings…</button>
+    <button id="save-recipe" class="ghost">Save settings…</button>
+    <input id="recipe-file" type="file" accept=".json,application/json" hidden>
+  </header>
+
+  <main class="layout">
+    <aside class="settings" id="settings">
+      <section class="card image-card">
+        <h2>Pattern image</h2>
+        <div id="drop-zone" class="drop-zone" tabindex="0">
+          <img id="image-thumb" alt="" hidden>
+          <div id="drop-text">
+            <strong>Drop an image here</strong> or <button id="choose-image" class="link">choose a file</button>
+            <div class="muted" id="image-hint"></div>
+          </div>
+        </div>
+        <div class="row-actions">
+          <span class="muted" id="image-meta"></span>
+          <button id="use-sample" class="link">Use a sample image</button>
+        </div>
+        <input id="image-file" type="file" accept="image/png,image/jpeg,image/gif,image/bmp,image/tiff,image/webp" hidden>
+      </section>
+      <div id="groups"></div>
+      <label class="advanced-toggle"><input type="checkbox" id="show-advanced"> Show advanced settings</label>
+    </aside>
+
+    <section class="preview-pane">
+      <div class="status" id="status" aria-live="polite"></div>
+      <ul class="diagnostics" id="diagnostics"></ul>
+      <div class="preview-toolbar">
+        <span class="muted" id="preview-label">Preview</span>
+        <div class="spacer-flex"></div>
+        <label class="fit-toggle" id="fit-toggle-wrap"><input type="checkbox" id="fit-toggle" checked> Fit to window</label>
+      </div>
+      <div class="preview" id="preview">
+        <div class="empty-state">Choose an image to see the stitch preview.</div>
+      </div>
+      <footer class="actions">
+        <label class="output-field">Save files to
+          <div class="output-row">
+            <input id="output-root" type="text" spellcheck="false">
+            <button id="choose-folder" class="ghost" hidden>Choose…</button>
+          </div>
+          <span class="muted" id="output-hint"></span>
+        </label>
+        <button id="generate" class="primary" disabled>Generate files</button>
+      </footer>
+      <div class="results" id="results" hidden></div>
+    </section>
+  </main>
+
+  <dialog id="dialog">
+    <form method="dialog">
+      <p id="dialog-message"></p>
+      <input id="dialog-input" type="text" hidden>
+      <menu id="dialog-buttons"></menu>
+    </form>
+  </dialog>
+
+  <script src="dat-shim.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

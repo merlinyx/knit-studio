@@ -1,0 +1,54 @@
+[
+  {
+    "id": "builtin-spacer-default",
+    "pipeline": "spacer",
+    "label": "Acrylic / elastic / conductive (defaults)",
+    "builtin": true,
+    "settings": {
+      "image": {"stitch_gauge": 9.5, "row_gauge": 13.0},
+      "compile": {"front_carrier": [2, 4], "back_carrier": [8, 10], "filler_carrier": 7,
+                  "filler_pass_pairs": 3, "tuck_spacing": 4, "drop_repeats": 2}
+    }
+  },
+  {
+    "id": "builtin-spacer-oct-6-7-5",
+    "pipeline": "spacer",
+    "label": "Back 6+7, filler 5, gauge 10 × 10",
+    "builtin": true,
+    "settings": {
+      "image": {"stitch_gauge": 10, "row_gauge": 10},
+      "compile": {"front_carrier": [2, 4], "back_carrier": [6, 7], "filler_carrier": 5,
+                  "filler_pass_pairs": 4}
+    }
+  },
+  {
+    "id": "builtin-spacer-oct-8-9-7",
+    "pipeline": "spacer",
+    "label": "Back 8+9, filler 7, 12 blocks/in",
+    "builtin": true,
+    "settings": {
+      "image": {"stitch_gauge": 9.5, "row_gauge": 12},
+      "compile": {"front_carrier": [2, 4], "back_carrier": [8, 9], "filler_carrier": 7,
+                  "filler_pass_pairs": 4}
+    }
+  },
+  {
+    "id": "builtin-tube-wire",
+    "pipeline": "tube",
+    "label": "Wire tube, gauge 2, bind off",
+    "builtin": true,
+    "settings": {
+      "compile": {"gauge": 2, "carrier": 6, "cast_on": "twisted_tuck", "finish": "bind_off"}
+    }
+  },
+  {
+    "id": "builtin-tube-wire-flap",
+    "pipeline": "tube",
+    "label": "Wire tube, gauge 3, plated start, flap top",
+    "builtin": true,
+    "settings": {
+      "compile": {"gauge": 3, "carrier": 6, "cast_on": "none", "plating_setup_courses": 2,
+                  "double_transfers": true, "finish": "flap_bind_off"}
+    }
+  }
+]

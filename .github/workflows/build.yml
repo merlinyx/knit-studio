@@ -1,0 +1,87 @@
+name: Test and build Knit Studio
+
+# Every push and pull request runs the tests. Pushing a tag such as v0.2.0
+# also builds the Mac and Windows apps and attaches them to a GitHub release.
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: pip install -e .
+      - run: python -m unittest discover -s tests -v
+
+  build:
+    needs: test
+    if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-15
+            asset: Knit-Studio-mac-apple-silicon.dmg
+          - os: macos-15-intel
+            asset: Knit-Studio-mac-intel.dmg
+          - os: windows-latest
+            asset: Knit-Studio-windows.exe
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[build]"
+      - run: pyinstaller packaging/knit-studio.spec --noconfirm
+
+      - name: Make disk image (macOS)
+        if: runner.os == 'macOS'
+        run: |
+          mkdir dmg
+          cp -R "dist/Knit Studio.app" dmg/
+          ln -s /Applications dmg/Applications
+          hdiutil create -volname "Knit Studio" -srcfolder dmg -ov -format UDZO "${{ matrix.asset }}"
+
+      - name: Rename executable (Windows)
+        if: runner.os == 'Windows'
+        shell: bash
+        run: mv "dist/Knit Studio.exe" "${{ matrix.asset }}"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.asset }}
+          path: ${{ matrix.asset }}
+
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: Knit-Studio-*
+          body: |
+            Download the file for your computer:
+
+            * **Mac with Apple chip (M1 or newer):** Knit-Studio-mac-apple-silicon.dmg
+            * **Older Intel Mac:** Knit-Studio-mac-intel.dmg
+            * **Windows:** Knit-Studio-windows.exe
+
+            First-time opening instructions are in the README under "For designers".
